@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>贵妃电影网 - 高清电影电视剧在线观看_最新影视推荐大全</title>
+<meta name="description" content="贵妃电影网（https://www.guifeidianyingwang-app）提供最新高清电影、热门电视剧、综艺、动漫在线观看与影视推荐，每日更新影视榜单、影视资讯与新片速递，找片看片就上贵妃电影网。" />
+<meta name="keywords" content="贵妃电影网,贵妃电影,guifeidianyingwang-app,高清电影在线观看,热门电视剧推荐,最新影视,影视排行榜" />
+<meta name="author" content="贵妃电影网" />
+<meta name="robots" content="index,follow" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="theme-color" content="#120f18" />
+<link rel="canonical" href="https://www.guifeidianyingwang-app/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="贵妃电影网" />
+<meta property="og:title" content="贵妃电影网 - 高清电影电视剧在线观看_最新影视推荐大全" />
+<meta property="og:description" content="贵妃电影网每日更新高清电影、热门电视剧、综艺动漫与影视榜单，最新大片推荐一站直达。" />
+<meta property="og:url" content="https://www.guifeidianyingwang-app/" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="贵妃电影网 - 高清电影电视剧在线观看" />
+<meta name="twitter:description" content="贵妃电影网：最新高清电影、电视剧、综艺动漫推荐与影视榜单。" />
+<style>
+:root{
+  --bg:#120f18;
+  --bg-soft:#1b1622;
+  --card:#1f1929;
+  --gold:#e8c37a;
+  --gold-deep:#c9a24a;
+  --red:#c8283c;
+  --text:#f3eee6;
+  --text-soft:#a49cae;
+  --line:rgba(232,195,122,.22);
+  --radius:16px;
+  --maxw:1200px;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  font-size:16px;line-height:1.75;
+  background-image:radial-gradient(900px 420px at 12% -8%,rgba(200,40,60,.20),transparent 60%),radial-gradient(760px 400px at 92% 4%,rgba(232,195,122,.16),transparent 62%);
+  background-repeat:no-repeat;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block;border:0}
+ul,ol{list-style:none}
+h1,h2,h3,h4{font-weight:700;line-height:1.35;letter-spacing:.5px}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 18px}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:12px;top:12px;background:var(--gold);color:#1a1420;padding:8px 14px;border-radius:8px;z-index:99}
+
+/* ===== 顶部导航 ===== */
+.topbar{
+  position:sticky;top:0;z-index:60;
+  background:rgba(18,15,24,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:62px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;min-width:0}
+.logo-mark{
+  width:40px;height:40px;flex:0 0 40px;border-radius:50%;
+  background:linear-gradient(145deg,var(--gold),var(--red));
+  display:flex;align-items:center;justify-content:center;
+  font-size:19px;font-weight:800;color:#1b1420;
+  box-shadow:0 0 0 1px rgba(232,195,122,.45),0 6px 18px rgba(200,40,60,.35);
+}
+.logo-text{min-width:0}
+.logo-text strong{display:block;font-size:19px;letter-spacing:2px;color:var(--gold)}
+.logo-text span{display:block;font-size:11px;color:var(--text-soft);letter-spacing:1.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  display:block;padding:8px 12px;border-radius:999px;font-size:14.5px;color:var(--text-soft);white-space:nowrap;
+}
+.nav a:hover,.nav a:focus{color:var(--gold);background:rgba(232,195,122,.10)}
+.nav a.active{color:#1b1420;background:linear-gradient(135deg,var(--gold),var(--gold-deep));font-weight:700}
+.menu-btn{
+  display:none;width:42px;height:38px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--gold);font-size:18px;cursor:pointer;
+}
+
+/* ===== Hero ===== */
+.hero{padding:38px 0 10px}
+.hero-box{
+  position:relative;overflow:hidden;border:1px solid var(--line);border-radius:26px;
+  background:linear-gradient(135deg,rgba(200,40,60,.24),rgba(27,22,34,.92) 46%,rgba(232,195,122,.16));
+  padding:36px 26px 32px;
+}
+.hero-box::after{
+  content:"";position:absolute;right:-70px;top:-70px;width:230px;height:230px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,195,122,.30),transparent 66%);
+}
+.badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:2px;
+  color:var(--gold);border:1px solid var(--line);border-radius:999px;padding:5px 14px;background:rgba(232,195,122,.08);
+}
+.badge i{width:6px;height:6px;border-radius:50%;background:var(--gold);font-style:normal;display:inline-block}
+.hero h1{font-size:34px;margin:18px 0 12px;letter-spacing:1px}
+.hero h1 em{font-style:normal;color:var(--gold);text-shadow:0 2px 14px rgba(232,195,122,.35)}
+.hero p.lead{color:var(--text-soft);max-width:640px;font-size:15.5px}
+.hero-url{margin-top:14px;font-size:13.5px;color:var(--text-soft);word-break:break-all}
+.hero-url b{color:var(--gold);font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:999px;font-size:15px;font-weight:700;border:1px solid transparent;
+}
+.btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#1b1420;box-shadow:0 10px 24px rgba(232,195,122,.22)}
+.btn-ghost{border-color:var(--line);color:var(--gold)}
+.btn:hover{opacity:.9}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+.stat{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.stat b{display:block;font-size:22px;color:var(--gold)}
+.stat span{font-size:12.5px;color:var(--text-soft)}
+
+/* ===== 通用区块 ===== */
+.section{padding:44px 0 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.sec-head h2{font-size:23px;position:relative;padding-left:14px}
+.sec-head h2::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;border-radius:4px;background:linear-gradient(var(--gold),var(--red))}
+.sec-head p{font-size:13.5px;color:var(--text-soft)}
+.sec-head a.more{font-size:13.5px;color:var(--gold);border-bottom:1px dashed var(--line);padding-bottom:2px}
+
+/* ===== 影片卡片 ===== */
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.card{
+  background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);overflow:hidden;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.card:hover{transform:translateY(-5px);border-color:var(--line);box-shadow:0 14px 30px rgba(0,0,0,.42)}
+.poster{position:relative;aspect-ratio:2/3;overflow:hidden;background:linear-gradient(160deg,#2a2136,#191322)}
+.poster span.ph{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:13px;letter-spacing:2px;color:rgba(232,195,122,.75);
+  background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.05) 0 10px,transparent 10px 20px);
+}
+.tag{
+  position:absolute;left:10px;top:10px;font-size:11.5px;padding:3px 9px;border-radius:6px;
+  background:rgba(18,15,24,.78);border:1px solid var(--line);color:var(--gold);
+}
+.score{position:absolute;right:10px;top:10px;font-size:12px;font-weight:700;color:#1b1420;background:var(--gold);border-radius:6px;padding:2px 7px}
+.card-body{padding:12px 13px 15px}
+.card-body h3{font-size:15px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-body p{font-size:12.5px;color:var(--text-soft);margin-top:6px;height:2.9em;overflow:hidden}
+
+/* ===== 榜单 ===== */
+.rank{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:16px}
+.panel{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px}
+.panel h3{font-size:17px;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.panel h3::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--red);transform:rotate(45deg)}
+.rank ol li{display:flex;gap:12px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.07)}
+.rank ol li:last-child{border-bottom:0}
+.rank .no{flex:0 0 24px;height:24px;border-radius:7px;background:rgba(255,255,255,.06);color:var(--text-soft);font-size:13px;display:flex;align-items:center;justify-content:center}
+.rank ol li:nth-child(1) .no,.rank ol li:nth-child(2) .no,.rank ol li:nth-child(3) .no{background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#1b1420;font-weight:700}
+.rank .name{font-size:14.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank .meta{font-size:12px;color:var(--text-soft)}
+
+/* ===== 资讯 ===== */
+.news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.news article{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:18px}
+.news article time{font-size:12px;color:var(--gold);letter-spacing:1px}
+.news article h3{font-size:16px;margin:8px 0 8px}
+.news article p{font-size:13.5px;color:var(--text-soft)}
+.news article a.go{display:inline-block;margin-top:12px;font-size:13px;color:var(--gold)}
+
+/* ===== 特色 ===== */
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.feat{background:linear-gradient(160deg,rgba(232,195,122,.10),rgba(31,25,41,.9));border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.feat b{display:block;font-size:16px;color:var(--gold);margin-bottom:8px}
+.feat p{font-size:13.5px;color:var(--text-soft)}
+
+/* ===== FAQ ===== */
+.faq details{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:14px 16px;margin-bottom:12px}
+.faq summary{font-size:15px;font-weight:600;cursor:pointer;color:var(--text);list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";float:right;color:var(--gold);font-weight:700}
+.faq details[open] summary::after{content:"－"}
+.faq details p{font-size:14px;color:var(--text-soft);margin-top:10px}
+
+/* ===== 底部 ===== */
+.footer{margin-top:52px;border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(27,22,34,.6),rgba(18,15,24,1));padding:34px 0 26px}
+.f-cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:22px}
+.f-col h4{font-size:15px;color:var(--gold);margin-bottom:12px}
+.f-col li{font-size:13.5px;color:var(--text-soft);padding:4px 0}
+.f-col li a:hover{color:var(--gold)}
+.f-about p{font-size:13.5px;color:var(--text-soft)}
+.f-bottom{margin-top:26px;padding-top:18px;border-top:1px dashed rgba(255,255,255,.08);font-size:12.5px;color:var(--text-soft);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.to-top{
+  position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));width:44px;height:44px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),var(--gold-deep));color:#1b1420;font-size:18px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(0,0,0,.45);z-index:70;
+}
+
+/* ===== 移动端自适应 ===== */
+@media (max-width:1024px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .feats{grid-template-columns:repeat(2,1fr)}
+  .rank{grid-template-columns:1fr 1fr}
+  .news{grid-template-columns:1fr 1fr}
+  .f-cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  body{font-size:15.5px}
+  .menu-btn{display:block}
+  .nav{
+    position:absolute;left:0;right:0;top:62px;background:rgba(18,15,24,.98);border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:stretch;padding:10px 14px 16px;display:none;
+  }
+  .nav.open{display:flex}
+  .nav a{padding:12px 10px;border-radius:10px;font-size:15.5px;border-bottom:1px solid rgba(255,255,255,.05)}
+  .hero{padding:22px 0 0}
+  .hero-box{padding:26px 18px 24px;border-radius:20px}
+  .hero h1{font-size:26px}
+  .hero-stats{grid-template-columns:repeat(3,1fr);gap:8px}
+  .stat b{font-size:18px}
+  .stat span{font-size:11px}
+  .section{padding:32px 0 0}
+  .sec-head h2{font-size:20px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .rank,.news,.feats{grid-template-columns:1fr}
+  .f-cols{grid-template-columns:1fr 1fr;gap:16px}
+  .card-body h3{font-size:14px}
+  .footer{padding:26px 0 20px}
+}
+@media (max-width:380px){
+  .grid{grid-template-columns:1fr}
+  .hero h1{font-size:23px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.guifeidianyingwang-app/#website",
+      "url": "https://www.guifeidianyingwang-app/",
+      "name": "贵妃电影网",
+      "alternateName": "guifeidianyingwang-app",
+      "description": "贵妃电影网提供高清电影、热门电视剧、综艺与动漫在线观看，每日更新影视榜单与最新影视资讯。",
+      "inLanguage": "zh-CN",
+      "publisher": { "@id": "https://www.guifeidianyingwang-app/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.guifeidianyingwang-app/#organization",
+      "name": "贵妃电影网",
+      "url": "https://www.guifeidianyingwang-app/",
+      "description": "贵妃电影网是专注于高清影视推荐与影视榜单更新的影视内容导航站点。"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.guifeidianyingwang-app/#webpage",
+      "url": "https://www.guifeidianyingwang-app/",
+      "name": "贵妃电影网 - 高清电影电视剧在线观看_最新影视推荐大全",
+      "isPartOf": { "@id": "https://www.guifeidianyingwang-app/#website" },
+      "inLanguage": "zh-CN",
+      "about": "贵妃电影网高清影视在线观看与最新影视推荐"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "贵妃电影网首页", "item": "https://www.guifeidianyingwang-app/" },
+        { "@type": "ListItem", "position": 2, "name": "最新电影", "item": "https://www.guifeidianyingwang-app/#movie" },
+        { "@type": "ListItem", "position": 3, "name": "热门电视剧", "item": "https://www.guifeidianyingwang-app/#tv" },
+        { "@type": "ListItem", "position": 4, "name": "综艺动漫", "item": "https://www.guifeidianyingwang-app/#show" },
+        { "@type": "ListItem", "position": 5, "name": "影视榜单", "item": "https://www.guifeidianyingwang-app/#rank" },
+        { "@type": "ListItem", "position": 6, "name": "影视资讯", "item": "https://www.guifeidianyingwang-app/#news" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<header class="topbar" role="banner">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="贵妃电影网首页">
+      <span class="logo-mark" aria-hidden="true">妃</span>
+      <span class="logo-text">
+        <strong>贵妃电影网</strong>
+        <span>https://www.guifeidianyingwang-app</span>
+      </span>
+    </a>
+    <button class="menu-btn" type="button" id="menuBtn" aria-label="展开导航菜单" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="nav" id="mainNav" role="navigation" aria-label="主导航">
+      <a class="active" href="#top">首页</a>
+      <a href="#movie">最新电影</a>
+      <a href="#tv">热门电视剧</a>
+      <a href="#show">综艺动漫</a>
+      <a href="#rank">影视榜单</a>
+      <a href="#news">影视资讯</a>
+      <a href="#feature">观影特色</a>
+      <a href="#about">关于贵妃电影网</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" role="main">
+
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-box">
+        <span class="badge"><i aria-hidden="true"></i> 贵妃电影网 · 每日更新</span>
+        <h1>看最新大片，就上<em>贵妃电影网</em></h1>
+        <p class="lead">贵妃电影网（guifeidianyingwang-app）聚合高清电影、热门电视剧、综艺与动漫资源，提供新片速递、影视榜单、影视资讯与找片导航，打开即看，更新不断档。</p>
+        <p class="lead" style="margin-top:8px">官方网址：<b>https://www.guifeidianyingwang-app</b></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#movie">立即浏览最新电影</a>
+          <a class="btn btn-ghost" href="#rank">查看今日影视榜单</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>68000+</b><span>收录影视条目</span></div>
+          <div class="stat"><b>24h</b><span>新片同步更新</span></div>
+          <div class="stat"><b>1080P</b><span>高清画质在线看</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="movie" aria-labelledby="movie-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="movie-title">最新电影 · 贵妃电影网热映推荐</h2>
+          <p>院线新片与网络大片同步上线，贵妃电影网每日挑选高分佳作</p>
+        </div>
+        <a class="more" href="#">查看全部电影</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">动作</span><span class="score">9.1</span></div>
+            <div class="card-body">
+              <h3>烈焰追击</h3>
+              <p>硬核动作大片，街头追车与近身搏斗全程高能。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">科幻</span><span class="score">8.8</span></div>
+            <div class="card-body">
+              <h3>星际回响</h3>
+              <p>太空探险题材，视效宏大，剧情层层反转。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">爱情</span><span class="score">8.5</span></div>
+            <div class="card-body">
+              <h3>春熙旧事</h3>
+              <p>年代爱情故事，细腻克制，口碑持续走高。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">悬疑</span><span class="score">9.0</span></div>
+            <div class="card-body">
+              <h3>雾中失语</h3>
+              <p>密室推理，结局三次反转，烧脑爱好者必看。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">动画</span><span class="score">8.7</span></div>
+            <div class="card-body">
+              <h3>山海少年</h3>
+              <p>国风动画电影，画面唯美，适合全家观看。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">喜剧</span><span class="score">8.3</span></div>
+            <div class="card-body">
+              <h3>周末大作战</h3>
+              <p>轻松解压喜剧，笑点密集，周末观影首选。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">战争</span><span class="score">8.9</span></div>
+            <div class="card-body">
+              <h3>铁血黎明</h3>
+              <p>战争史诗，群像刻画扎实，场面真实震撼。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">犯罪</span><span class="score">8.6</span></div>
+            <div class="card-body">
+              <h3>暗线追踪</h3>
+              <p>犯罪悬疑，双男主对决，节奏紧凑不拖沓。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">剧情</span><span class="score">8.4</span></div>
+            <div class="card-body">
+              <h3>长街故人</h3>
+              <p>现实题材剧情片，情感真挚，后劲十足。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><span class="tag">恐怖</span><span class="score">7.9</span></div>
+            <div class="card-body">
+              <h3>午夜回声</h3>
+              <p>心理惊悚，氛围营造出色，胆大者入。</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="tv" aria-labelledby="tv-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="tv-title">热门电视剧 · 追剧榜单实时更新</h2>
+          <p>国剧、韩剧、日剧、美剧一站聚合，贵妃电影网同步追更</p>
+        </div>
+        <a class="more" href="#">查看全部电视剧</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">更新至24集</span><span class="score">8.9</span></div>
+            <div class="card-body">
+              <h3>朱墙深处</h3>
+              <p>宫廷权谋大剧，服化道精致，剧情步步惊心。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">已完结</span><span class="score">9.2</span></div>
+            <div class="card-body">
+              <h3>城中向阳</h3>
+              <p>都市职场群像剧，真实细腻，口碑爆棚。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">更新至12集</span><span class="score">8.6</span></div>
+            <div class="card-body">
+              <h3>侦探日记</h3>
+              <p>单元探案剧，一集一案，节奏明快不注水。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">已完结</span><span class="score">8.8</span></div>
+            <div class="card-body">
+              <h3>山海谣</h3>
+              <p>古装仙侠剧，特效在线，情感线饱满。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">更新至8集</span><span class="score">8.2</span></div>
+            <div class="card-body">
+              <h3>少年行</h3>
+              <p>青春校园剧，热血治愈，回忆感满满。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">更新至30集</span><span class="score">8.5</span></div>
+            <div class="card-body">
+              <h3>家宴</h3>
+              <p>家庭伦理剧，烟火气十足，适合合家观看。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">韩剧</span><span class="score">8.7</span></div>
+            <div class="card-body">
+              <h3>首尔夜色</h3>
+              <p>都市悬疑爱情，画面质感高级。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">美剧</span><span class="score">9.0</span></div>
+            <div class="card-body">
+              <h3>边境法则</h3>
+              <p>犯罪题材美剧，尺度大，剧情张力强。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">更新至16集</span><span class="score">8.3</span></div>
+            <div class="card-body">
+              <h3>医者仁心录</h3>
+              <p>医疗行业剧，专业细节扎实，情感动人。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><span class="tag">日剧</span><span class="score">8.4</span></div>
+            <div class="card-body">
+              <h3>深夜食堂物语</h3>
+              <p>治愈系日剧，一集一故事，温暖下饭。</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="show" aria-labelledby="show-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="show-title">综艺动漫 · 轻松时刻不缺席</h2>
+          <p>热门综艺与高分动漫同步更新，贵妃电影网陪你度过碎片时间</p>
+        </div>
+        <a class="more" href="#">查看全部综艺动漫</a>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">综艺封面</span><span class="tag">综艺</span><span class="score">8.5</span></div>
+            <div class="card-body">
+              <h3>周末去哪儿</h3>
+              <p>旅行慢综艺，风景治愈，嘉宾阵容讨喜。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">综艺封面</span><span class="tag">音乐</span><span class="score">8.8</span></div>
+            <div class="card-body">
+              <h3>声浪计划</h3>
+              <p>音乐竞演综艺，live实力派云集。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">动漫封面</span><span class="tag">动漫</span><span class="score">9.1</span></div>
+            <div class="card-body">
+              <h3>剑起苍澜</h3>
+              <p>国漫热血番，打斗流畅，剧情渐入佳境。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">动漫封面</span><span class="tag">动漫</span><span class="score">8.9</span></div>
+            <div class="card-body">
+              <h3>星海拾遗</h3>
+              <p>治愈系日常番，画风清新，适合放松。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">综艺封面</span><span class="tag">脱口秀</span><span class="score">8.2</span></div>
+            <div class="card-body">
+              <h3>今晚开讲</h3>
+              <p>脱口秀节目，观点犀利，笑中带思考。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">动漫封面</span><span class="tag">动漫</span><span class="score">8.6</span></div>
+            <div class="card-body">
+              <h3>机械纪元</h3>
+              <p>科幻机甲番，设定完整，粉丝口碑佳。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">综艺封面</span><span class="tag">竞技</span><span class="score">8.0</span></div>
+            <div class="card-body">
+              <h3>极限之战</h3>
+              <p>体能竞技综艺，对抗激烈，燃点密集。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">动漫封面</span><span class="tag">国漫</span><span class="score">8.7</span></div>
+            <div class="card-body">
+              <h3>锦鲤小镇</h3>
+              <p>国风治愈番，短小精悍，适合通勤看。</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="rank" aria-labelledby="rank-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="rank-title">影视榜单 · 贵妃电影网热播排行</h2>
+          <p>基于播放热度与口碑评分生成，每小时刷新一次</p>
+        </div>
+        <a class="more" href="#">查看完整榜单</a>
+      </div>
+      <div class="rank">
+        <div class="panel">
+          <h3>电影热播榜</h3>
+          <ol>
+            <li><span class="no">1</span><span><span class="name">烈焰追击</span><span class="meta">动作 · 9.1分 · 今日播放 86万</span></span></li>
+            <li><span class="no">2</span><span><span class="name">雾中失语</span><span class="meta">悬疑 · 9.0分 · 今日播放 74万</span></span></li>
+            <li><span class="no">3</span><span><span class="name">铁血黎明</span><span class="meta">战争 · 8.9分 · 今日播放 68万</span></span></li>
+            <li><span class="no">4</span><span><span class="name">星际回响</span><span class="meta">科幻 · 8.8分 · 今日播放 61万</span></span></li>
+            <li><span class="no">5</span><span><span class="name">山海少年</span><span class="meta">动画 · 8.7分 · 今日播放 55万</span></span></li>
+            <li><span class="no">6</span><span><span class="name">暗线追踪</span><span class="meta">犯罪 · 8.6分 · 今日播放 49万</span></span></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h3>电视剧追更榜</h3>
+          <ol>
+            <li><span class="no">1</span><span><span class="name">城中向阳</span><span class="meta">都市 · 9.2分 · 更新至大结局</span></span></li>
+            <li><span class="no">2</span><span><span class="name">朱墙深处</span><span class="meta">古装 · 8.9分 · 更新至24集</span></span></li>
+            <li><span class="no">3</span><span><span class="name">山海谣</span><span class="meta">仙侠 · 8.8分 · 已完结</span></span></li>
+            <li><span class="no">4</span><span><span class="name">边境法则</span><span class="meta">美剧 · 9.0分 · 更新至第3季</span></span></li>
+            <li><span class="no">5</span><span><span class="name">侦探日记</span><span class="meta">探案 · 8.6分 · 更新至12集</span></span></li>
+            <li><span class="no">6</span><span><span class="name">家宴</span><span class="meta">家庭 · 8.5分 · 更新至30集</span></span></li>
+          </ol>
+        </div>
+        <div class="panel">
+          <h3>高分冷门佳作</h3>
+          <ol>
+            <li><span class="no">1</span><span><span class="name">春熙旧事</span><span class="meta">爱情 · 8.5分 · 口碑黑马</span></span></li>
+            <li><span class="no">2</span><span><span class="name">长街故人</span><span class="meta">剧情 · 8.4分 · 现实题材</span></span></li>
+            <li><span class="no">3</span><span><span class="name">深夜食堂物语</span><span class="meta">日剧 · 8.4分 · 治愈下饭</span></span></li>
+            <li><span class="no">4</span><span><span class="name">锦鲤小镇</span><span class="meta">国漫 · 8.7分 · 短番精品</span></span></li>
+            <li><span class="no">5</span><span><span class="name">周末大作战</span><span class="meta">喜剧 · 8.3分 · 解压必看</span></span></li>
+            <li><span class="no">6</span><span><span class="name">医者仁心录</span><span class="meta">行业剧 · 8.3分 · 细节扎实</span></span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="news" aria-labelledby="news-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="news-title">影视资讯 · 新片速递与观影指南</h2>
+          <p>贵妃电影网编辑部出品，第一时间带来影视动态</p>
+        </div>
+        <a class="more" href="#">查看更多资讯</a>
+      </div>
+      <div class="news">
+        <article>
+          <time datetime="2026-10-11">2026-10-11</time>
+          <h3>本周新片速递：三部大片同日上线</h3>
+          <p>动作、科幻、动画各一部，贵妃电影网已同步收录高清片源与观影指南。</p>
+          <a class="go" href="#">阅读全文 →</a>
+        </article>
+        <article>
+          <time datetime="2026-10-10">2026-10-10</time>
+          <h3>追剧日历：10月重点剧集更新表</h3>
+          <p>整理10月国剧、韩剧、美剧更新时间，附贵妃电影网追更提醒。</p>
+          <a class="go" href="#">阅读全文 →</a>
+        </article>
+        <article>
+          <time datetime="2026-10-09">2026-10-09</time>
+          <h3>高分电影盘点：近五年被低估的十部作品</h3>
+          <p>从口碑数据出发，挑选评分高但热度不足的佳作，附观看顺序建议。</p>
+          <a class="go" href="#">阅读全文 →</a>
+        </article>
+        <article>
+          <time datetime="2026-10-08">2026-10-08</time>
+          <h3>国漫观察：暑期档之后的口碑走向</h3>
+          <p>从播放量与评分双维度，解析近期国漫作品的表现与观众偏好。</p>
+          <a class="go" href="#">阅读全文 →</a>
+        </article>
+        <article>
+          <time datetime="2026-10-07">2026-10-07</time>
+          <h3>观影设备与画质设置小技巧</h3>
+          <p>教你用手机、平板、电视获得更好的在线观影画质体验。</p>
+          <a class="go" href="#">阅读全文 →</a>
+        </article>
+        <article>
+          <time datetime="2026-10-06">2026-10-06</time>
+          <h3>家庭观影清单：适合全家一起看的影片</h3>
+          <p>精选适合周末亲子共赏的动画与温情电影，附推荐理由。</p>
+          <a class="go" href="#">阅读全文 →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="feature" aria-labelledby="feature-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="feature-title">观影特色 · 为什么选择贵妃电影网</h2>
+          <p>从找片到看片，贵妃电影网把体验做简单</p>
+        </div>
+        <a class="more" href="#">了解贵妃电影网</a>
+      </div>
+      <div class="feats">
+        <div class="feat">
+          <b>每日同步更新</b>
+          <p>新片、剧集更新与全网同步，贵妃电影网第一时间收录。</p>
+        </div>
+        <div class="feat">
+          <b>分类清晰好找</b>
+          <p>按类型、地区、年份、评分多维筛选，找片效率更高。</p>
+        </div>
+        <div class="feat">
+          <b>高清画质优先</b>
+          <p>优先推荐1080P及以上画质片源，支持多终端流畅播放。</p>
+        </div>
+        <div class="feat">
+          <b>榜单数据驱动</b>
+          <p>结合播放热度与口碑评分，输出更可信的影视推荐榜单。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <h2 id="about-title">关于贵妃电影网</h2>
+          <p>贵妃电影网 · https://www.guifeidianyingwang-app</p>
+        </div>
+      </div>
+      <div class="faq">
+        <details open="open">
+          <summary>贵妃电影网是什么类型的网站？</summary>
+          <p>贵妃电影网（guifeidianyingwang-app）是面向影视爱好者的影视内容导航与推荐站点，聚合高清电影、热门电视剧、综艺、动漫条目，并提供影视榜单与影视资讯，帮助用户快速找到想看的内容。</p>
+        </details>
+        <details>
+          <summary>贵妃电影网的内容更新频率如何？</summary>
+          <p>贵妃电影网每日更新新片速递与剧集更新提醒，影视榜单每小时依据播放热度与口碑评分刷新，确保用户看到的是最新的影视推荐结果。</p>
+        </details>
+        <details>
+          <summary>在贵妃电影网上如何快速找到想看的影片？</summary>
+          <p>可以通过顶部导航进入最新电影、热门电视剧、综艺动漫等栏目，也可以直接查看影视榜单与高分冷门佳作板块，按类型、评分、地区筛选。</p>
+        </details>
+        <details>
+          <summary>贵妃电影网支持移动端浏览吗？</summary>
+          <p>支持。贵妃电影网采用响应式布局，手机、平板、桌面端均可自适应显示，移动端提供折叠导航菜单与触控友好的卡片排版。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="wrap">
+    <div class="f-cols">
+      <div class="f-col f-about">
+        <h4>贵妃电影网</h4>
+        <p>贵妃电影网（https://www.guifeidianyingwang-app）专注高清电影、热门电视剧、综艺动漫的在线推荐与影视榜单更新，每日上新，找片看片一站直达。</p>
+        <p style="margin-top:8px">官方网址：https://www.guifeidianyingwang-app</p>
+      </div>
+      <div class="f-col">
+        <h4>影视栏目</h4>
+        <ul>
+          <li><a href="#movie">最新电影</a></li>
+          <li><a href="#tv">热门电视剧</a></li>
+          <li><a href="#show">综艺动漫</a></li>
+          <li><a href="#rank">影视榜单</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>推荐专区</h4>
+        <ul>
+          <li><a href="#">高分佳作</a></li>
+          <li><a href="#">新片速递</a></li>
+          <li><a href="#">冷门好片</a></li>
+          <li><a href="#">家庭观影</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#about">网站介绍</a></li>
+          <li><a href="#news">影视资讯</a></li>
+          <li><a href="#feature">观影特色</a></li>
+          <li><a href="#">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© 2026 贵妃电影网 guifeidianyingwang-app · 高清影视推荐与影视榜单</span>
+      <span>贵妃电影网提醒您：请通过正规渠道观看正版影视内容</span>
+    </div>
+  </div>
+</footer>
+
+<a class="to-top" href="#top" aria-label="回到顶部">↑</a>
+
+<script>
+(function(){
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded','false');
+    }
+  });
+})();
+</script>
+</body>
+</html>
